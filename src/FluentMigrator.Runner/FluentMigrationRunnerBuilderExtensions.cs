@@ -26,34 +26,7 @@ namespace FluentMigrator.Runner
         public static IMigrationRunnerBuilder AddAllDatabases(this IMigrationRunnerBuilder builder)
         {
             return builder
-                .AddDb2()
-                .AddDb2ISeries()
-                .AddDotConnectOracle()
-                .AddDotConnectOracle12C()
-                .AddFirebird()
-                .AddHana()
-#if NETFRAMEWORK
-                .AddJet()
-#endif
-                .AddMySql4()
-                .AddMySql5()
-                .AddMySql8()
-                .AddOracle()
-                .AddOracle12C()
-                .AddOracleManaged()
-                .AddOracle12CManaged()
-                .AddPostgres()
-                .AddPostgres92()
-                .AddRedshift()
-                .AddSnowflake()
                 .AddSQLite()
-                .AddSqlServer()
-                .AddSqlServer2000()
-                .AddSqlServer2005()
-                .AddSqlServer2008()
-                .AddSqlServer2012()
-                .AddSqlServer2014()
-                .AddSqlServer2016()
                 ;
         }
     }
